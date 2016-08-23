@@ -1,0 +1,11 @@
+Package: bmapdistance
+Type: Package
+Title: Distance and Travel Time Between Two Points from Baidu Maps
+Version: 1.0
+Date: 2016-08-23
+Author: Yun Yuan
+Maintainer: Yun Yuan <yuan2@uwm.edu>
+Description: Get distance and travel time between two points from Baidu Maps.
+    Four possible modes of transportation (riding, walking, driving)
+License: GPL(>=2)
+Imports: RCurl, XML
