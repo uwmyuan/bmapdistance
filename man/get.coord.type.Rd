@@ -12,6 +12,3 @@ This function returns the user's current coordernite system.
 get.coord.type()
 }
 
-\examples{
-get.coord.type()
-

@@ -12,6 +12,4 @@ This function returns the user's Baidu Maps API key
 get.api.key()
 }
 
-\examples{
-get.api.key()
 
