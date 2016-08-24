@@ -66,11 +66,11 @@ set.traffic_model=function(traffic_model){
 #' @examples
 #' set.api.key("E4805d16520de693a3fe707cdc962045")
 #' bmapdistance("40.056878","116.30815", "40.063597|116.364973", "driving")
-#' {"status":0,"result":[{"distance":{"text":"19.7公里","value":19749},"duration":{"text":"30分钟",
-#'	"value":1812}},{"distance":{"text":"21.3公里","value":21255},"duration":{"text":"32分钟","value"
-#'	:1934}},{"distance":{"text":"45.8公里","value":45776},"duration":{"text":"1.2小时","value":4402}
-#'	},{"distance":{"text":"47.3公里","value":47282},"duration":{"text":"1.3小时","value":4524}}],"message":"成功"}
-bmapsdistance = function(origins, destinations, mode) {
+#' {"status":0,"result":[{"distance":{"text":"19.7????","value":19749},"duration":{"text":"30????",
+#'	"value":1812}},{"distance":{"text":"21.3????","value":21255},"duration":{"text":"32????","value"
+#'	:1934}},{"distance":{"text":"45.8????","value":45776},"duration":{"text":"1.2小时","value":4402}
+#'	},{"distance":{"text":"47.3????","value":47282},"duration":{"text":"1.3小时","value":4524}}],"message":"?晒?"}
+bmapdistance = function(origins, destinations, mode) {
 	#If ak is not set:
   if(is.null(get.api.key())){
 		stop("API KEY IS NOT SET!")

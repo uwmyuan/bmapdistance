@@ -2,12 +2,12 @@
 \alias{set.traffic_model}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+set user's traffic model
 }
 \description{
-ֻ�Լݳ���·(driving)��Ч��  
-��ѡֵ��10 ���߸��٣�11 ���ʱ�䣻12 ���·����13 ��� ����(������·��);  
-����10-12 ������ʵʱ·������ϣ��������ɿ������·�߾��룬����ʹ�ò�����ʵʱ·����Ĭ��ֵ13��
+只对驾车算路(driving)生效。  
+可选值：10 不走高速；11 最短时间；12 最短路径；13 最短 距离(不考虑路况);  
+其中10-12 都考虑实时路况，若希望计算最可靠的最短路线距离，建议使用不考虑实时路况的默认值13。3??
 }
 \usage{
 set.traffic_model(traffic_model)

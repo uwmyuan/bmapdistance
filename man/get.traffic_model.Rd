@@ -2,7 +2,7 @@
 \alias{get.traffic_model}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+get user's traffic model
 }
 \description{
 This function returns the user's current transportation mode.

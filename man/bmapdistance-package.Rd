@@ -21,10 +21,11 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{bmapdistance}
 }
 \references{
-http://lbsyun.baidu.com/index.php?title=webapi/route-matrix-api-v2
+lbsyun.baidu.com/index.php?title=webapi/route-matrix-api-v2
 }
 
 \examples{
-Set.api.key("E4805d16520de693a3fe707cdc962045")
+library(bmapdistance)
+set.api.key("E4805d16520de693a3fe707cdc962045")
 d=bmapdistance("40.45,116.34","40.34,116.45","driving")
 }

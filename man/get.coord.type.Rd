@@ -2,11 +2,11 @@
 \alias{get.coord.type}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+get user's coordernate setting
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-This function returns the user's current coordernite system.
+This function returns the user's current coordernate system.
 }
 \usage{
 get.coord.type()
