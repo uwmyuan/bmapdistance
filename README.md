@@ -12,6 +12,6 @@ devtools::install_github("uwmyuan/bmapsdistance")
 # Example
 Please refer to the [instructions](https://github.com/rodazuero/gmapsdistance#example-1)
 
-#Disclaimer
+# Disclaimer
 This code is adapted from [gmapdistance](https://github.com/rodazuero/gmapsdistance) by [@uwmyuan](https://github.com/uwmyuan).
-This repo is maintained by [@uwmyuan](https://github.com/uwmyuan)
+This repo is also maintained by [@uwmyuan](https://github.com/uwmyuan). 
