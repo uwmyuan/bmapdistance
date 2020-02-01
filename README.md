@@ -11,7 +11,37 @@ install.packages("devtools")
 devtools::install_github("uwmyuan/bmapsdistance")
 ```
 # Example
-Please refer to the [instructions](https://github.com/rodazuero/gmapsdistance#example-1)
+## Quick example
+Request:
+```
+set.api.key(YOUR_KEY_HERE)
+results = bmapdistance(origin = "39.900677,116.327811",
+                       destination = "39.871107,116.385629",
+                       mode = "walking")
+results
+```
+Response:
+```
+$status
+[1] "0"
+
+$message
+[1] "成功"
+
+$distance_value
+[1] "8.4公里"
+
+$distance_text
+[1] "8423"
+
+$duration_text
+[1] "2小时"
+
+$duration_value
+[1] "7207"
+```
+
+Please also refer to the [instructions](https://github.com/rodazuero/gmapsdistance#example-1)
 
 # Troubleshooter
 ## Dependency
