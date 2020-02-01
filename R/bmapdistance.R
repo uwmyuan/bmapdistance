@@ -83,7 +83,7 @@ bmapdistance = function(origins, destinations, mode) {
           "'riding', 'driving', 'walking' ")
   }
 
-  # If traffic_model is not recognized:
+	# If traffic_model is not recognized:
   if (!(get.traffic_model() %in% c("10",  "11", "12", "13"))) {
     stop(
       "Traffic model not recognized. Traffic model should be one of ",
@@ -93,30 +93,30 @@ bmapdistance = function(origins, destinations, mode) {
 	# If coord_type is not recognized:
   if (!(get.coord.type() %in% c("bd09ll",  "bd09mc", "gcj02", "wgs84"))) {
     stop(
-      "Traffic model not recognized. Traffic model should be one of ",
+      "Coord type not recognized. Traffic model should be one of ",
       "bd09ll',  'bd09mc', 'gcj02', 'wgs84'"
     )
   }
-    # Set up URL
+	# Set up URL
   url = paste0("http://api.map.baidu.com/routematrix/v2/", mode, "?",
-					"&output=xml",
+	  "output=xml",
           "&origins=", origins,
           "&destinations=", destinations,
-				  "&coord_type=", get.coord.type()
+	  "&coord_type=", get.coord.type()
 	)
     if(mode=="driving"){
 		if(get.traffic_model()!="12"){
 	  	  url=paste0(url,"&tactics=", get.traffic_model())
 		  }
 	}
-  # use Baidu maps key (after replacing spaces just in case)
+	# use Baidu maps key (after replacing spaces just in case)
   key = gsub(" ", "", get.api.key())
   url = paste0(url, "&ak=", key)
     
-  # Call the Baidu Maps Webservice and store the XML output in webpageXML
+	# Call the Baidu Maps Webservice and store the XML output in webpageXML
   webpageXML = xmlParse(getURL(url));
       
-  # Extract the results from webpageXML
+	# Extract the results from webpageXML
   results = xmlChildren(xmlRoot(webpageXML))
 
 	#convert xml to data
