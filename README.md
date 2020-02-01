@@ -5,6 +5,12 @@ Inquiry distance and duration between locations with Baidu Map API
 支持多种交通方式 
 支持多点间查询
 # Installation
+## Quick installation
+```
+install.packages("remotes")
+remotes::install_github("uwmyuan/bmapsdistance")
+```
+## legacy (skip this)
 ```
 # Github installation
 install.packages("devtools")
