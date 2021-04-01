@@ -47,7 +47,9 @@ $duration_value
 [1] "7207"
 ```
 
-Please also refer to the [instructions](https://github.com/rodazuero/gmapsdistance#example-1)
+Note that please replace `YOUR_KEY_HERE` with your private key from [Baidu Map API Console](http://lbsyun.baidu.com/apiconsole/key). Free quota of inquries is supplied daily. A valid key is required if your inquiries exceed daily limit. This package will NOT save or record your key in any way. 
+
+Please also refer to the [instructions](https://github.com/rodazuero/gmapsdistance#example-1) for more examples.
 
 # Troubleshooter
 ## Dependency
